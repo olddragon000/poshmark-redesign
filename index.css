@@ -1,0 +1,266 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img, picture,video,canvas,svg{
+    display: block;
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    padding-top: 115px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+  }
+/* --------------------------- */
+.me-top-nav{
+
+    height: 65px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.me-bottom-nav{
+    height: 50px;
+    overflow-x:auto; 
+    overflow-y:hidden
+}
+
+.me-nav-poshmark-logo{
+    max-height: 90%;
+}
+
+.me-login{
+    cursor: pointer;
+}
+
+.me-search-button{
+    border-color: rgba(0,0,0, .25)!important;
+    color:rgba(0,0,0, .75)!important;
+}
+
+.me-search-button:hover{
+    color: white !important;
+    background-color: #612D35!important;
+}
+
+
+  /* ------dropdown------- */
+.me-category {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+
+.me-category:hover {
+    cursor: pointer;
+}
+
+.me-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-weight: 400;
+  }
+  
+.me-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.me-dropdown-content a:hover {background-color: #ddd;}
+
+.women:hover .women-content {
+    display: block;
+}
+.men:hover .men-content {
+    display: block;
+}
+.kids:hover .kids-content {
+    display: block;
+}
+.home:hover .home-content {
+    display: block;
+}
+.elec:hover .elec-content {
+    display: block;
+}
+
+.pets:hover .pets-content {
+    display: block;
+}
+
+.brands:hover .brands-content{
+    display: block;
+}
+
+
+/* .me-category:hover .me-category {background-color: #3e8e41;} */
+
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+      /* color:#ff0026; */
+    }
+  }
+
+
+
+
+
+
+.me-body-component:nth-child(odd){
+    background-color: rgba(97, 45, 53, .18);
+
+}
+/* .me-listing{
+    padding-left:1rem;
+} */
+
+.me-card-text > p{
+    font-size: 0.8rem;
+    margin:0rem;
+}
+
+
+
+.me-listing-title, .me-influencer-name{
+    font-weight: bolder;
+}
+
+.me-body-component-content{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#listings,#collections{
+    margin-top: 3rem;
+}
+
+.me-listings,.me-collections {
+    margin-top: 1rem;
+
+}
+
+.me-see-more{
+    background-color: #612D35;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 2rem;
+    margin-left: 1%;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+.me-see-more:hover{
+    background-color:rgba(97, 45, 53, .75) ;
+}
+
+.card{
+    background-color:rgba(97, 45, 53, .18) ;
+    border:0rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .25);
+
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .25);
+
+}
+
+.me-collection:hover{
+    cursor: pointer;
+
+}
+
+
+.me-get-app-img{
+    width:42%;
+}
+
+.poshmark-logo{
+    width:10rem;
+}
+
+.me-get-app-text-text, .me-get-app-text-links {
+    padding-left:10%;
+}
+
+.me-influencer-description {
+    min-height: 5rem;
+}
+
+.me-card-text{
+    margin-left:1rem;
+}
+
+.me-community{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.me-sell-content{
+    max-width: 60rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+
+.me-sell-text-container{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%
+}
+
+.me-sell-img-container{
+    padding:auto;
+
+}
+
+.me-search-small {
+    display: none;
+}
+
+.me-login:hover{
+    cursor: pointer;
+
+}
+@media only screen and (max-width: 600px) {
+    .me-search-full {
+      display: none;
+    }
+    .me-search-small {
+        display: block;
+    }
+    .me-login-text {
+        display: none;
+    }
+    .me-search-small:hover {
+        cursor: pointer;
+    }
+
+  }
+.me-see-more{
+    border-radius: 5px;
+}
